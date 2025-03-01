@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/north_hair_product/assets/css/slick.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/north_hair_product/assets/css/slick-theme.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('assets/north_hair_product/assets/css/style.css') }}" />
+    <link href="{{ asset('assets/north_hair_product/assets/css/output.css') }}" rel="stylesheet">
+    
+     <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/images/LUXE LOCKS Lgo (3).svg') }}">
+</head>
+
+<body>
+    @yield('app')
+
+    <script type="text/javascript" src="{{ asset('assets/north_hair_product/assets/js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/north_hair_product/assets/js/jquery-migrate.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/north_hair_product/assets/js/slick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('assets/north_hair_product/assets/js/script.js') }}"></script>
+</body>
+
+</html>

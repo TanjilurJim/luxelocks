@@ -1,0 +1,26 @@
+.btn-allstore {
+    background-color: #86181A;
+    color: white;
+    border: none; /* Optional: add if you don't want a border */
+    outline: none; /* Optional: remove outline for focus */
+}
+
+/* Hover state */
+.btn-allstore:hover {
+    background-color: #A01D20; /* Slightly lighter shade */
+    color: white; /* Optional: adjust text color if needed */
+}
+
+/* Active state */
+.btn-allstore:active {
+    background-color: #6B1215; /* Darker shade */
+    color: #ffffff; /* Optional: adjust text color for active */
+}
+
+/* Focus state */
+.btn-allstore:focus {
+    outline: 2px solid #A01D20; /* Add focus outline or remove it */
+    outline-offset: 2px;
+    color: #ffffff;
+
+}

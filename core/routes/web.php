@@ -1,0 +1,200 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SupportsController;
+use App\Http\Controllers\ExtensionsController;
+use App\Http\Controllers\SingleProductController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\ClearanceController;
+use App\Http\Controllers\SuppliesController;
+use App\Http\Controllers\User\Auth\LoginController;
+use App\Http\Controllers\ProductReviewController;
+use App\Http\Controllers\FooterController;
+Route::get('/clear', function () {
+    \Illuminate\Support\Facades\Artisan::call('optimize:clear');
+});
+
+
+// User Support Ticket
+Route::controller('TicketController')->prefix('ticket')->name('ticket.')->group(function () {
+    Route::get('/', 'supportTicket')->name('index');
+    Route::get('new', 'openSupportTicket')->name('open');
+    Route::post('create', 'storeSupportTicket')->name('store');
+    Route::get('view/{ticket}', 'viewTicket')->name('view');
+    Route::post('reply/{id}', 'replyTicket')->name('reply');
+    Route::post('close/{id}', 'closeTicket')->name('close');
+    Route::get('download/{attachment_id}', 'ticketDownload')->name('download');
+});
+
+Route::get('app/deposit/confirm/{hash}', 'Gateway\PaymentController@appDepositConfirm')->name('deposit.app.confirm');
+
+// Route::controller('CartController')->name('cart.')->group(function () {
+//     Route::get('cart', 'cart')->name('page');
+//     Route::post('add-to-cart/{productId}', 'addToCart')->name('add');
+//     Route::post('cart-update/{id}', 'updateCartItem')->name('update');
+//     Route::get('cart-shortlist', 'partialCart')->name('shortlist');
+//     Route::get('cart-items-count', 'cartItemsCount')->name('items.count');
+//     Route::get('cart-subtotal', 'cartSubtotal')->name('items.subtotal');
+//     Route::post('remove-from-cart/{id}', 'removeCartItem')->name('remove');
+
+//     Route::post('apply-coupon', 'applyCoupon')->name('coupon.apply');
+//     Route::post('remove-coupon', 'removeCoupon')->name('coupon.remove');
+// });
+
+Route::controller('WishlistController')->name('wishlist.')->group(function () {
+    Route::get('wishlist', 'wishList')->name('page');
+    Route::post('add-to-wishlist/{productId}', 'addToWishList')->name('add');
+    Route::get('wishlist-short', 'partialWishlist')->name('shortlist');
+    Route::get('wishlist-count', 'wishlistItemsCount')->name('items.count');
+    Route::post('remove-from-wishlist/{id}', 'remove')->name('remove');
+});
+
+Route::controller('ProductController')->name('product.')->group(function () {
+    Route::get('products', 'products')->name('all');
+    // category products
+    Route::get('products/{category}', 'productByCategory')->name('by.category');
+    // brand products
+    Route::get('{slug}/products', 'productsByBrand')->name('by.brand');
+    // product details
+    Route::get('product/{slug}', 'productDetails')->name('detail');
+    Route::post('cart', 'cart')->name('cart.store');
+    // Route::get('product/{id}', 'show')->name('show');
+
+    Route::get('products/{id}/reviews', 'reviews')->name('reviews');
+    Route::get('product/{slug}/stock-by-variant', 'geStockByVariant')->name('variant.stock');
+    Route::get('images-by-variant/{productId}', 'getImagesByVariant')->name('variant.image');
+    Route::get('compare-wishlist-cart-date', 'compareWishlistAndCartData')->name('compare.wishlist.cart.data');
+});
+
+Route::post('/product/{id}/review', [ProductReviewController::class, 'store'])->name('review.store')->middleware('auth');
+
+Route::controller('CompareController')->name('compare.')->group(function () {
+    Route::get('compare-products', 'compare')->name('all');
+    Route::post('add-to-compare', 'addToCompare')->name('add');
+    Route::get('compare-products-count', 'compareProductsCount')->name('count');
+    Route::post('remove-from-compare/{id?}', 'removeFromCompare')->name('remove');
+});
+
+Route::controller('SiteController')->group(function () {
+    Route::get('categories', 'categories')->name('categories');
+    Route::get('brands', 'brands')->name('brands');
+    Route::get('track-order', 'trackOrder')->name('order.track');
+    Route::post('track-order', 'getOrderTrackData');
+    Route::post('subscribe', 'addSubscriber')->name('subscribe');
+    Route::get('faq', 'faq')->name('faq');
+    // ('faq', 'faq')->name('faq');
+    Route::get('about-us', 'about')->name('about-us');
+
+    // offer
+    Route::get('offers', 'offers')->name('offers');
+    Route::get('offer-products/{id}', 'offerProducts')->name('offer.products');
+
+    Route::get('/contact', 'contact')->name('contact');
+    Route::post('contact-submit', 'contactSubmit')->name('contact.submit');
+    Route::get('/change/{lang?}', 'changeLanguage')->name('lang');
+    Route::get('cookie-policy', 'cookiePolicy')->name('cookie.policy');
+    Route::get('/cookie/accept', 'cookieAccept')->name('cookie.accept');
+    Route::get('policy/{slug}', 'policyPages')->name('policy.pages');
+
+    Route::get('placeholder-image/{size}', 'placeholderImage')->withoutMiddleware('maintenance')->name('placeholder.image');
+    Route::get('maintenance-mode', 'maintenance')->withoutMiddleware('maintenance')->name('maintenance');
+
+    Route::get('/', 'index')->name('home');
+});
+
+Route::controller('MensController')->group(function () {
+    Route::get('mens_hair_system', 'mens_hair_system')->name('mens_hair_system');
+    Route::get('mens_stock_hair_system', 'mens_stock_hair_system')->name('mens_stock_hair_system');
+    Route::get('mens_custom_hair_system', 'mens_custom_hair_system')->name('mens_custom_hair_system');
+    Route::get('mens_repear_hair_system', 'mens_repear_hair_system')->name('mens_repear_hair_system');
+    Route::get('mens_afro_hair_system', 'mens_afro_hair_system')->name('mens_afro_hair_system');
+    Route::get('mens_lace_hair_system', 'mens_lace_hair_system')->name('mens_lace_hair_system');
+    Route::get('mens_skin_hair_system', 'mens_skin_hair_system')->name('mens_skin_hair_system');
+    Route::get('mens_mono_hair_system', 'mens_mono_hair_system')->name('mens_mono_hair_system');
+    Route::get('mens_frontal_hair_system', 'mens_frontal_hair_system')->name('mens_frontal_hair_system');
+    Route::get('mens_crown_hair_system', 'mens_crown_hair_system')->name('mens_crown_hair_system');
+    Route::get('mens_cap_hair_system', 'mens_cap_hair_system')->name('mens_cap_hair_system');
+
+});
+Route::controller('WomensController')->group(function () {
+    Route::get('women', 'women_page')->name('women');
+    Route::get('women_wigs', 'women_wigs')->name('women_wigs');
+    Route::get('women_toppers', 'women_toppers')->name('women_toppers');
+    Route::get('women_systems', 'women_systems')->name('women_systems');
+    Route::get('women_medical', 'women_medical')->name('women_medical');
+    Route::get('women_lace', 'women_lace')->name('women_lace');
+    Route::get('women_integrations', 'women_integrations')->name('women_integrations');
+});
+
+// Routes
+Route::controller(SupportsController::class)->group(function () {
+    Route::get('support', 'support')->name('support');
+    Route::get('support_ambassador', 'support_ambassador')->name('support_ambassador');
+    Route::get('support_catalogs', 'support_catalogs')->name('support_catalogs');
+    Route::get('support_charts', 'support_charts')->name('support_charts');
+    Route::get('support_choose', 'support_choose')->name('support_choose');
+    Route::get('support_direction', 'support_direction')->name('support_direction');
+    Route::get('support_dropshipping', 'support_dropshipping')->name('support_dropshipping');
+    Route::get('support_extensions', 'support_extensions')->name('support_extensions');
+    Route::get('support_faqs', 'support_faqs')->name('support_faqs');
+    Route::get('support_order', 'support_order')->name('support_order');
+    Route::get('support_policy', 'support_policy')->name('support_policy');
+    Route::get('support_prices', 'support_prices')->name('support_prices');
+    Route::get('support_service', 'support_service')->name('support_service');
+    Route::get('support_signup', 'support_signup')->name('support_signup');
+    Route::get('support_solutions', 'support_solutions')->name('support_solutions');
+    Route::get('support_startup', 'support_startup')->name('support_startup');
+    Route::get('support_tester', 'support_tester')->name('support_tester');
+    Route::get('support_toppers', 'support_toppers')->name('support_toppers');
+    Route::get('support_track', 'support_track')->name('support_track');
+    Route::get('support_training', 'support_training')->name('support_training');
+    Route::get('support_wigs', 'support_wigs')->name('support_wigs');
+});
+
+Route::controller(ExtensionsController::class)->group(function () {
+    Route::get('extensions', 'extensions')->name('extensions');
+    Route::get('extensions_clip', 'extensions_clip')->name('extensions_clip');
+    Route::get('extensions_fusion', 'extensions_fusion')->name('extensions_fusion');
+    Route::get('extensions_sew', 'extensions_sew')->name('extensions_sew');
+    Route::get('extensions_tape', 'extensions_tape')->name('extensions_tape');
+    Route::get('extensions_tools', 'extensions_tools')->name('extensions_tools');
+});
+// Routes
+Route::controller(AboutController::class)->group(function () {
+    Route::get('about', 'about')->name('about');
+    Route::get('about_exhibitions', 'about_exhibitions')->name('about_exhibitions');
+    Route::get('about_factory', 'about_factory')->name('about_factory');
+    Route::get('about_team', 'about_team')->name('about_team');
+    Route::get('about_what', 'about_what')->name('about_what');
+});
+
+
+Route::controller(ClearanceController::class)->group(function () {
+    Route::get('clearance-hair-system', 'clearance')->name('clearance-hair-system');
+    Route::get('clearance-hair-extension', 'clearance_extension')->name('clearance-hair-extension');
+});
+
+Route::controller(SuppliesController::class)->group(function () {
+    Route::get('hair-system-supplies', 'supplies')->name('hair-system-supplies');
+    // Route::get('clearance-hair-extension', 'clearance_extension')->name('clearance-hair-extension');
+});
+
+Route::get('/quote', [CartController::class, 'index'])->name('quote');
+Route::get('/cart/remove/{productId}', [CartController::class, 'removeFromCart'])->name('cart.remove');
+Route::post('/cart/update', [CartController::class, 'update'])->name('cart.update');
+Route::post('/quote/request', [CartController::class, 'requestQuote'])->name('quote.request');
+
+
+Route::get('/privacy-policies', [FooterController::class, 'index'])->name('privacy-policies');
+Route::get('/terms', [FooterController::class, 'terms'])->name('terms');
+
+Route::get('/locationshipto', [FooterController::class, 'locationshipto'])->name('locationshipto');
+Route::get('/customer_copyright', [FooterController::class, 'customerCopyRight'])->name('copyright');
+Route::get('/feedback', [FooterController::class, 'feedback'])->name('feedback');
+
+Route::get('/category/{slug}', [SingleProductController::class, 'show'])->name('category.details');
+
+
+
+require __DIR__ . '/user.php';

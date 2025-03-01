@@ -1,0 +1,470 @@
+@extends('Template::layouts.app')
+@section('app')
+<!-- Navigation -->
+<header class="sticky top-0 z-50">
+    <div class="flex justify-between items-center bg-[#000206] md:px-10 px-[10px] md:py-[16px] py-[10px]">
+
+        <p class="text-[14px] font-bold text-white xl:block hidden">Make Every Piece Worth It</p>
+
+        <a class="text-[14px] font-bold text-white xl:block hidden" href="#">ARE YOU A SALON PROFESSIONAL? <span
+                class="underline">
+                Click to open a
+                professional account!
+            </span></a>
+
+        <a class="md:text-[14px] text-[12px] font-bold text-white xl:hidden block" href="#">Sign Up to Unlock
+            Wholesale Prices
+        </a>
+
+        <div class="flex items-center gap-5">
+            <div class="relative">
+                <button id="currencyButton"
+                    class="bg-[#000206] text-white md:text-[16px] text-[12px] flex items-center gap-2">
+                    USD
+                    <svg class="md:w-4 w-3 md:h-4 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                        </path>
+                    </svg>
+                </button>
+                <div id="currencyDropdown" class="absolute hidden bg-[#000206] text-white mt-2 rounded shadow-lg z-10">
+                    <a class="md:text-[16px] text-[12px] block px-4 py-2 hover:bg-gray-700 cursor-pointer transition-all duration-200"
+                        href="#">USD</a>
+                    <a class="md:text-[16px] text-[12px] block px-4 py-2 hover:bg-gray-700 cursor-pointer transition-all duration-200"
+                        href="#">EUR</a>
+                    <a class="md:text-[16px] text-[12px] block px-4 py-2 hover:bg-gray-700 cursor-pointer transition-all duration-200"
+                        href="#">AUD</a>
+                    <a class="md:text-[16px] text-[12px] block px-4 py-2 hover:bg-gray-700 cursor-pointer transition-all duration-200"
+                        href="#">CAD</a>
+                    <a class="md:text-[16px] text-[12px] block px-4 py-2 hover:bg-gray-700 cursor-pointer transition-all duration-200"
+                        href="#">GBP</a>
+                </div>
+            </div>
+            <div class="relative">
+                <button id="languageButton"
+                    class="bg-[#000206] text-white md:text-[16px] text-[12px] flex items-center gap-2">
+                    {{-- <img class="md:h-3 h-2 md:w-[18px] w-[14px]" src="{{ asset('assets/north_hair_product/assets/images/en_US_flag.webp') }}" alt="English"> --}}
+
+                    {{-- <svg class="md:w-4 w-3 md:h-4 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg> --}}
+                </button>
+                {{-- <div id="languageDropdown"
+                        class="absolute hidden bg-[#000206] text-white md:text-[16px] text-[12px] mt-2 shadow-lg z-10">
+                        <a class="flex items-center gap-2 md:px-4 px-2 md:pr-10 pr-6 py-2 hover:bg-gray-700 transition-all duration-200"
+                            href="#"><img class="md:h-3 h-2 md:w-[18px] w-[14px]" src="{{ asset('assets/north_hair_product/assets/images/en_US_flag.webp') }}"
+                alt="English">
+                English</a>
+                <a class="flex items-center gap-2 md:px-4 px-2 md:pr-10 pr-6 py-2 hover:bg-gray-700 transition-all duration-200"
+                    href="#"><img class="md:h-3 h-2 md:w-[18px] w-[14px]" src="{{ asset('assets/north_hair_product/assets/images/it.svg') }}"
+                        alt="Italiano"> Italiano</a>
+                <a class="flex items-center gap-2 md:px-4 px-2 md:pr-10 pr-6 py-2 hover:bg-gray-700 transition-all duration-200"
+                    href="#"><img class="md:h-3 h-2 md:w-[18px] w-[14px]" src="{{ asset('assets/north_hair_product/assets/images/fr.svg') }}"
+                        alt="Francais"> Francais</a>
+                <a class="flex items-center gap-2 md:px-4 px-2 md:pr-10 pr-6 py-2 hover:bg-gray-700 transition-all duration-200"
+                    href="#"><img class="md:h-3 h-2 md:w-[18px] w-[14px]" src="{{ asset('assets/north_hair_product/assets/images/es.svg') }}"
+                        alt="Espanol"> Espanol</a>
+                <a class="flex items-center gap-2 md:px-4 px-2 md:pr-10 pr-6 py-2 hover:bg-gray-700 transition-all duration-200"
+                    href="#"><img class="md:h-3 h-2 md:w-[18px] w-[14px]" src="{{ asset('assets/north_hair_product/assets/images/de.svg') }}"
+                        alt="Deutsch"> Deutsch</a>
+            </div> --}}
+        </div>
+    </div>
+    </div>
+    <div class="xl:block hidden">
+        <nav class="bg-white shadow-lg">
+            <div class=" md:px-10 px-[10px]">
+                <div class="grid grid-cols-3">
+                    <div class="flex items-center w-full">
+                        <a href="{{route('home')}}" class="flex items-center">
+                            <img src="{{ asset('assets/images/logo.jpeg') }}" alt="North Hair" class="h-6 w-auto">
+                        </a>
+                    </div>
+
+                    <div class="hidden md:flex items-center justify-center w-full">
+                        <a id="men-link" href="{{route('mens_hair_system')}}"
+                            class="nav-link text-[#1F2124] py-5 px-4 font-[900]">Men</a>
+                        <a id="women-link" href="{{route('women')}}"
+                            class="nav-link text-[#1F2124] py-5 px-4 font-[900]">Women</a>
+                        <a id="extensions-link" href="{{route('extensions')}}"
+                            class="nav-link text-[#1F2124] py-5 px-4 font-[900]">Extensions</a>
+                        <a id="clearance-link" href="#"
+                            class="nav-link text-[#1F2124] py-5 px-4 font-[900]">Clearance</a>
+                        <a href="{{route('hair-system-supplies')}}"
+                            class="nav-link text-[#1F2124] py-5 px-4 font-[900]">Supplies</a>
+                        <a id="about-link" href="about-us.html"
+                            class="nav-link text-[#1F2124] py-5 px-4 font-[900]">About</a>
+                        <a id="support-link" href="#"
+                            class="nav-link text-[#1F2124] py-5 px-4 font-[900]">Support</a>
+                    </div>
+
+                    <div class="flex items-center justify-end space-x-6 w-full">
+                        {{-- <button class="text-[#1F2124] font-bold"><svg class="h-4 w-4"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                                </svg></button> --}}
+                        <a href="{{route('login')}}" class="text-[#1F2124] font-bold flex items-center"><svg
+                                class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                <path
+                                    d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
+                            </svg>Login</a>
+                        <a href="{{route('quote')}}" class="text-[#1F2124] font-bold flex items-center gap-1">
+                            <span
+                                class="bg-yellow-400 text-[12px] font-normal rounded-full w-4 flex items-center justify-center">0</span>
+                            Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="dropdown-section" class="hidden bg-white shadow-lg px-10 py-4 absolute w-full z-10">
+        <div id="men-dropdown" class="hidden">
+            <div class="flex gap-[100px] justify-center">
+                <div class="flex flex-col gap-3">
+                    <p class="font-bold">By Feature</p>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('mens_stock_hair_system') }}">Stock</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('mens_custom_hair_system') }}">Custom</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('mens_repear_hair_system') }}">Repair</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('mens_afro_hair_system') }}">Afro</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p class="font-bold">By Base</p>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('mens_lace_hair_system') }}">Lace</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('mens_skin_hair_system') }}">Skin</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('mens_mono_hair_system') }}">Mono</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p class="font-bold">By Coverage</p>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('mens_frontal_hair_system') }}">Frontal & Partial</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('mens_crown_hair_system') }}">Crown</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('mens_cap_hair_system') }}">Full Cap</a>
+                </div>
+            </div>
+        </div>
+        <div id="women-dropdown" class="hidden">
+            <div class="flex gap-[100px] justify-center">
+                <div class="flex flex-col gap-3">
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('women_toppers') }}">Hair Toppers</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('women_integrations') }}">Hair Integration Systems</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('women_systems') }}">Hair Systems for Women</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('women_wigs') }}">Human Hair Wigs</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('women_medical') }}">Medical Grade Wigs</a>
+                    {{-- <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                            href="{{ route('women_lace') }}">Lace Front & Full Lace Wigs</a> --}}
+                </div>
+            </div>
+        </div>
+        <div id="extensions-dropdown" class="hidden">
+            <div class="flex gap-[100px] justify-center">
+                <div class="flex flex-col gap-3">
+                    <p class="font-bold">Professional</p>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('extensions_fusion') }}">Fusion / Keratin</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('extensions_tape') }}">Tape-in</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('extensions_sew') }}">Sew-in Weft</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p class="font-bold">Ready To Wear</p>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('extensions_clip') }}">Clip-in</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p class="font-bold">Supplies</p>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('extensions_tools') }}">Tools & Accessories</a>
+                </div>
+            </div>
+
+        </div>
+        <div id="clearance-dropdown" class="hidden">
+            <div class="flex gap-[100px] justify-center ">
+                <div class="flex flex-col gap-3">
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{route('clearance-hair-system')}}">Hair Systems on
+                        Sale</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{route('clearance-hair-extension')}}">Hair Extensions on
+                        Sale</a>
+                </div>
+            </div>
+        </div>
+        <div id="about-dropdown" class="hidden">
+            <div class="flex gap-[100px] justify-center">
+                <div class="flex flex-col gap-3">
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('about_what') }}">What We Do</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('about_factory') }}">Factory VR</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('about_exhibitions') }}">Exhibitions</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('about') }}">About Us</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('about_team') }}">Meet the Team</a>
+                </div>
+            </div>
+
+        </div>
+        <div id="support-dropdown" class="hidden">
+            <div class="flex gap-[100px] justify-center">
+                <div class="flex flex-col gap-3">
+                    <p class="font-bold">Help</p>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_choose') }}">How to choose</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_order') }}">How to order</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_track') }}">Track order</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_charts') }}">Color Charts</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_service') }}">Pre-cut service</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_direction') }}">Hair direction options</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_policy') }}">Return Policy</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_faqs') }}">FAQs</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p class="font-bold">For Professionals</p>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_signup') }}">Sign up to unlock wholesale</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_prices') }}">Prices</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_solutions') }}">Wholesale solutions</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_catalogs') }}">Free catalogs</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_dropshipping') }}">Dropshipping</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_training') }}">Training & courses</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_startup') }}">Startup packages</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p class="font-bold">Partnership</p>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_ambassador') }}">Be our ambassador</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_tester') }}">Be our product-tester</a>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p class="font-bold">Reviews</p>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_toppers') }}">Hair systems before and after</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_toppers') }}">Hair toppers before and after</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_wigs') }}">Wigs before and after</a>
+                    <a class="text-[#444444] font-[14px] hover:text-black transition-all duration-300"
+                        href="{{ route('support_extensions') }}">Hair extensions before and after</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="xl:hidden block">
+        <nav class="bg-white shadow-lg">
+            <div class="flex justify-between items-center px-4 py-3">
+
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-700">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path
+                                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+                        </svg>
+                    </button>
+
+                    <button id="menu-toggle" class="text-gray-700">
+                        <svg class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+
+                <a href="index.html" class="flex items-center">
+                    <img src="{{ asset('assets/images/logo.jpeg') }}" alt="Logo" class="sm:h-6 h-4 w-auto">
+                </a>
+
+                <div class="flex items-center space-x-4">
+                    <a href="my-account.html" class="text-gray-700">
+                        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464l349.5 0c-8.9-63.3-63.3-112-129-112l-91.4 0c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z" />
+                        </svg>
+                    </a>
+                    <a href="request-a-quote.html" class="flex items-center text-gray-700">
+                        <span
+                            class="bg-yellow-400 text-xs font-medium rounded-full w-4 h-4 flex items-center justify-center">0</span>
+                        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="m5.50835165 12.5914912c-.00106615-.0057657-.00203337-.011566-.00289985-.0173991l-1.22011509-7.32069058c-.12054699-.72328196-.74633216-1.25340152-1.47959089-1.25340152h-.30574582c-.27614237 0-.5-.22385763-.5-.5s.22385763-.5.5-.5h.30574582c1.1918179 0 2.21327948.84029234 2.44951006 2h16.24474412c.3321894 0 .5720214.31795246.480762.63736056l-2 7.00000004c-.0613288.2146507-.2575218.3626394-.480762.3626394h-12.90976979l.12443308.7465985c.12054699.7232819.74633216 1.2534015 1.47959089 1.2534015h11.30574582c.2761424 0 .5.2238576.5.5s-.2238576.5-.5.5h-11.30574582c-1.22209789 0-2.26507316-.8835326-2.46598481-2.0890025l-.21991747-1.3195048zm-.08478811-6.5914912 1 6h12.69928576l1.7142857-6zm2.57643646 15c-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2 2 .8954305 2 2-.8954305 2-2 2zm0-1c.55228475 0 1-.4477153 1-1s-.44771525-1-1-1-1 .4477153-1 1 .44771525 1 1 1zm9 1c-1.1045695 0-2-.8954305-2-2s.8954305-2 2-2 2 .8954305 2 2-.8954305 2-2 2zm0-1c.5522847 0 1-.4477153 1-1s-.4477153-1-1-1-1 .4477153-1 1 .4477153 1 1 1z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div id="menu" class="h-0 overflow-hidden transition-[height] duration-300 bg-white">
+                <div class="flex flex-col space-y-2 px-4 py-3">
+                    <a href="mens-hair-systems.html" class="text-gray-700 font-bold">Men</a>
+                    <a href="wigs-and-toppers.html" class="text-gray-700 font-bold">Women</a>
+                    <a href="human-hair-extensions.html" class="text-gray-700 font-bold">Extensions</a>
+                    <a href="#" class="text-gray-700 font-bold">Clearance</a>
+                    <a href="hair-system-supplies.html" class="text-gray-700 font-bold">Supplies</a>
+                    <a href="about-us.html" class="text-gray-700 font-bold">About</a>
+                    <a href="#" class="text-gray-700 font-bold">Support</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+@yield('content')
+<!-- Footer -->
+<footer class="">
+    <div class="bg-[#222222] flex flex-col items-center px-4 py-10">
+        <h2 class="text-[20px] font-bold text-white">Hey, let's keep in touch!</h2>
+        <p class="text-white">Be the first to get exclusive offers, in-stock updates, tips and more.</p>
+        <form class="mt-4 flex items-center" action="#">
+            <input class="px-4 py-3" placeholder="Your email address" type="email" name="email" id="email">
+            <input class="font-semibold bg-[#306AED] text-white cursor-pointer sm:px-10 px-7 py-3" type="submit"
+                value="Subscribe">
+        </form>
+    </div>
+
+    <div class="bg-[#1C1C1C] py-10">
+        <div class="max-w-screen-xl mx-auto grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 px-4">
+            <div class="flex flex-col gap-2">
+                <h3 class="text-white text-[18px] font-bold mb-2">COMPANY</h3>
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="{{route('mens_hair_system')}}">Men</a>
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="{{route('women')}}">Women</a>
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="{{route('extensions')}}">Extensions</a>
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="{{route('hair-system-supplies')}}">Supplies</a>
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="{{route('about')}}">About</a>
+                {{-- <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="#">Blog</a> --}}
+                {{-- <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="#">Careers</a> --}}
+            </div>
+            <div class="flex flex-col gap-2">
+                <h3 class="text-white text-[18px] font-bold mb-2">WARRANTY</h3>
+                {{-- <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="#">Payment
+                    policy</a> --}}
+                {{-- <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="#">Shipping
+                    policy</a> --}}
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="#">Privacy
+                    policy</a>
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="#">Terms
+                    and
+                    conditions</a>
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="#">Locations we
+                    ship to</a>
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="#">Customer
+                    copyright protection</a>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h3 class="text-white text-[18px] font-bold mb-2">HELP & SUPPORT</h3>
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="#">Custom
+                    order
+                    form</a>
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="#">Add-on
+                    services</a>
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="#">Feedback
+                    &
+                    complaints</a>
+                <a class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                    href="#">FAQs</a>
+            </div>
+            <div class="flex flex-col gap-2">
+                <h3 class="text-white text-[18px] font-bold mb-2">CONTACT</h3>
+                <div class="mb-2">
+                    <h4 class="text-white font-bold">USA</h4>
+                    <p class="text-white">Phone: <a
+                            class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                            href="tel:1-310-902-6685">1-310-902-6685</a></p>
+                    <p class="text-white">Email: <a
+                            class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                            href="mailto:ussales@newtimeshair.com">ussales@newtimeshair.com</a></p>
+                </div>
+                <div class="mb-2">
+                    <h4 class="text-white font-bold">Spain</h4>
+                    <p class="text-white">Phone: <a
+                            class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                            href="tel:34-611-098-284">34-611-098-284</a></p>
+                </div>
+                <div class="mb-2">
+                    <h4 class="text-white font-bold">Headquarters</h4>
+                    <p class="text-white">Phone: <a
+                            class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                            href="tel:86-186-6193-9293">86-186-6193-9293</a></p>
+                    <p class="text-white">WhatsApp: <a
+                            class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                            href="tel:86-186-6193-9293"></a>86-186-6193-9293</p>
+                    </p>
+                    <p class="text-white">Email: <a
+                            class="text-white text-[15px] hover:text-[#F9D161] transition-all duration-300"
+                            href="mailto:info@newtimeshair.com">info@newtimeshair.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-[#1C1C1C] px-4 flex flex-col items-center py-5 border-t">
+        <img src="assets/images/footer-icons.webp" alt="Footer Icons">
+        <p class="text-white mt-2 mb-4">Wholesale human hair replacement system, wig and hair extension
+            manufacturer.</p>
+        <p class="text-white">© 2025 Newtimes Hair. All rights reserved.</p>
+    </div>
+</footer>
+@endsection

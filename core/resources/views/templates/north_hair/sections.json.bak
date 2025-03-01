@@ -1,0 +1,2030 @@
+{
+    "home_banner": {
+        "page": "home",
+        "builder": true,
+        "no_selection": false,
+        "name": "Banner (Home)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x778"
+                },
+                "banner_mobile": {
+                    "size": "780x780"
+                },
+                "event_logo": {
+                    "size": "528x88"
+                }
+            },
+            "title": "text",
+            "subtitle": "text",
+            "link": "text",
+            "date": "text",
+            "booth": "text",
+            "location": "text"
+        }
+    },
+    "home_product_categories": {
+        "page": "home",
+        "builder": true,
+        "no_selection": false,
+        "name": "Product Categories (Home)",
+        "hide_builder": true
+    },
+    "proaccount": {
+        "page": "home",
+        "builder": false,
+        "no_selection": false,
+        "name": " Pro Account (Home)",
+        "content": {
+            "title": "text",
+            "subtitle": "text"
+        },
+        "elements_title": "Pro Account",
+        "element": {
+            "title": "text",
+            "subtitle": "text"
+        }
+    },
+    "home_discover_more": {
+        "page": "home",
+        "builder": true,
+        "no_selection": false,
+        "name": "Discover More (Home)",
+        "content": {
+            "videos": {
+                "banner_desktop": {
+                    "size": "1920x778"
+                }
+            },
+            "title": "text",
+            "subtitle1": "text",
+            "subtitle2": "text",
+            "link": "text"
+        }
+    },
+
+    "home_mens_hair": {
+        "page": "home",
+        "builder": false,
+        "no_selection": false,
+        "hide_builder": true,
+        "name": "Men's Hair Systems (Home)",
+        "element": {
+            "title": "text",
+            "slug": "title",
+            "details": "textarea-nic",
+            "modal": false
+        }
+    },
+
+    "home_womens_wigs": {
+        "page": "home",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women's Wigs (Home)"
+    },
+    "home_hair_extensions": {
+        "page": "home",
+        "builder": true,
+        "no_selection": false,
+        "name": "Hair Extensions (Home)"
+    },
+
+    "home_why_northhair": {
+        "page": "home",
+        "builder": false,
+        "no_selection": false,
+        "hide_builder": true,
+        "name": "Why North Hair (Home)",
+        "element": {
+            "title": "text",
+            "slug": "title",
+            "details": "textarea-nic",
+            "modal": false
+        }
+    },
+
+    "home_customer_feedback": {
+        "page": "home",
+        "builder": false,
+        "no_selection": false,
+        "hide_builder": true,
+        "name": "Customer Feedback (Home)",
+        "element": {
+            "title": "text",
+            "slug": "title",
+            "details": "textarea-nic",
+            "modal": false
+        }
+    },
+
+
+    "home_resource": {
+        "page": "home",
+        "builder": false,
+        "no_selection": false,
+        "hide_builder": true,
+        "name": "Resource (Home)",
+        "element": {
+            "title": "text",
+            "slug": "title",
+            "details": "textarea-nic",
+            "modal": false
+        }
+    },
+
+
+
+    "mens_hair_system_banner": {
+        "page": "men",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Hair System Banner (Men)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "banner_text": "text"
+        }
+    },
+    "mens_hair_system_product": {
+        "page": "men",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Hair System Product Caption (Men)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_hair_system_comparison": {
+        "page": "men",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Hair System Comparison (Men)",
+        "content": {
+            "title": "text",
+            "sub_title": "text"
+        },
+        "elements_title": "Comparison",
+        "element": {
+            "images": {
+                "comparison": {
+                    "size": "800x800"
+                }
+            },
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_hair_system_faq": {
+        "page": "men",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Hair System FAQ (Men)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "mens_stock_hair_system_banner": {
+        "page": "stock",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Stock Hair System Banner (Men)",
+        "content": {
+            "images": {
+                 "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "title": "text",
+            "list_1": "text",
+            "list_2": "text",
+            "list_3": "text"
+        }
+    },
+    "mens_stock_hair_system_product": {
+        "page": "stock",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Stock Hair System Product Caption (Men)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_stock_hair_system_comparison": {
+        "page": "stock",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Stock Hair System Comparison (Men)",
+        "content": {
+            "title": "text",
+            "sub_title": "text"
+        },
+        "elements_title": "Mens Stock Comparison",
+        "element": {
+            "images": {
+                "stock_comparison": {
+                    "size": "800x800"
+                }
+            },
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_stock_hair_system_faq": {
+        "page": "stock",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Stock Hair System Faq (Men)",
+        "element": {
+            "title": "text",
+            "details": "text",
+            "modal": true
+        }
+    },
+    "mens_custom_hair_system_product": {
+        "page": "custom",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Custom Hair System Product (Men)",
+        "content": {
+            "title": "text",
+            "details": "text",
+            "customize_link": "text",
+            "order_link": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_custom_hair_system_helpme": {
+        "page": "custom",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Custom Hair System HelpMe (Men)",
+        "content": {
+            "title": "text",
+            "link": "text"
+        }
+    },
+    "mens_custom_hair_system_faq": {
+        "page": "custom",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Custom Hair System Faq (Men)",
+        "element": {
+            "title": "text",
+            "details": "text",
+            "modal": true
+        }
+    },
+    "mens_custom_hair_system_banner1": {
+        "page": "custom",
+        "builder": true,
+        "no_selection": true,
+        "name": "Mens Custom Hair System Banner 1 (Men)",
+        "content": {
+            "images": {
+                "custom_banner1": {
+                    "size": "614x440"
+                }
+            },
+            "title": "text",
+            "list_1": "text",
+            "list_2": "text",
+            "list_3": "text",
+            "list_4": "text",
+            "details": "text",
+            "link": "text"
+        }
+    },
+    "mens_custom_hair_system_banner2": {
+        "page": "custom",
+        "builder": true,
+        "no_selection": true,
+        "name": "Mens Custom Hair System Banner 2 (Men)",
+        "content": {
+            "images": {
+                "custom_banner2": {
+                    "size": "614x440"
+                }
+            },
+            "title": "text",
+            "sub_title": "text",
+            "list_1": "text",
+            "list_2": "text",
+            "list_3": "text",
+            "link": "text"
+        }
+    },
+    "mens_custom_hair_system_banner": {
+        "page": "custom",
+        "builder": false,
+        "no_selection": false,
+        "hide_builder": true,
+        "name": "Mens Custom Hair System Banner (Men)"
+    },
+    "mens_repair_hair_system_banner": {
+        "page": "repair",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens repair Hair System Banner (Men)",
+        "content": {
+            "images": {
+                "banner_image": {
+                    "size": "1280x320"
+                }
+            }
+        }
+    },
+    "mens_repair_hair_system_faq": {
+        "page": "repair",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens repair Faq (Men)",
+        "element": {
+            "title": "text",
+            "details": "text",
+            "modal": true
+        }
+    },
+    "mens_afro_hair_system_banner": {
+        "page": "afro",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Afro Hair System Banner (Men)",
+        "content": {
+            "images": {
+                 "banner_desktop": {
+                    "size": "1920x480"
+                }
+            }
+        }
+    },
+    "mens_afro_hair_system_product": {
+        "page": "afro",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Afro Hair System Product Caption (Men)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_afro_hair_system_faq": {
+        "page": "afro",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Afro Hair System Faq (Men)",
+        "element": {
+            "title": "text",
+            "details": "text",
+            "modal": true
+        }
+    },
+    "mens_lace_hair_system_banner": {
+        "page": "lace",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Lace Hair System Banner (Men)",
+        "content": {
+            "images": {
+                 "banner_desktop": {
+                    "size": "1920x480"
+                }
+            },
+            "title_1": "text",
+            "title_2": "text"
+        }
+    },
+    "mens_lace_hair_system_product": {
+        "page": "lace",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Lace System Product Caption (Men)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_lace_hair_system_comparison": {
+        "page": "lace",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Lace System Comparison (Men)",
+        "content": {
+            "title": "text",
+            "sub_title": "text"
+        },
+        "elements_title": "Comparison",
+        "element": {
+            "images": {
+                "comparison": {
+                    "size": "800x800"
+                }
+            },
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_lace_hair_system_faq": {
+        "page": "lace",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Lace System Faq (Men)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "mens_skin_hair_system_banner": {
+        "page": "skin",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Skin Hair System Banner (Men)",
+        "content": {
+            "images": {
+                 "banner_desktop": {
+                    "size": "1920x480"
+                }
+            },
+            "title_1": "text",
+            "title_2": "text"
+        }
+    },
+    "mens_skin_hair_system_product": {
+        "page": "skin",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Skin System Product Caption (Men)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_skin_hair_system_comparison": {
+        "page": "skin",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Skin System Comparison (Men)",
+        "content": {
+            "title": "text",
+            "sub_title": "text"
+        },
+        "elements_title": "Comparison",
+        "element": {
+            "images": {
+                "comparison": {
+                    "size": "800x800"
+                }
+            },
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_skin_hair_system_faq": {
+        "page": "skin",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Skin System Faq (Men)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "mens_mono_hair_system_banner": {
+        "page": "mono",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Mono Hair System Banner (Men)",
+        "content": {
+            "images": {
+                 "banner_desktop": {
+                    "size": "1920x480"
+                }
+            },
+            "title_1": "text",
+            "title_2": "text",
+            "sub_title": "text"
+        }
+    },
+    "mens_mono_hair_system_product": {
+        "page": "mono",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Mono System Product Caption (Men)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_mono_hair_system_comparison": {
+        "page": "mono",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Mono System Comparison (Men)",
+        "content": {
+            "title": "text",
+            "sub_title": "text"
+        },
+        "elements_title": "Comparison",
+        "element": {
+            "images": {
+                "comparison": {
+                    "size": "800x800"
+                }
+            },
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_mono_hair_system_faq": {
+        "page": "mono",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Mono System Faq (Men)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "mens_frontal_hair_system_banner": {
+        "page": "frontal",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Frontal Hair System Banner (Men)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                }
+            },
+            "title_1": "text",
+            "title_2": "text"
+        }
+    },
+    "mens_frontal_hair_system_product": {
+        "page": "frontal",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Frontal System Product Caption (Men)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_frontal_hair_system_faq": {
+        "page": "frontal",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Frontal System Faq (Men)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "mens_crown_hair_system_banner": {
+        "page": "crown",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Crown Hair System Banner (Men)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                }
+            },
+            "title_1": "text"
+        }
+    },
+    "mens_crown_hair_system_product": {
+        "page": "crown",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Crown System Product Caption (Men)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_crown_hair_system_comparison": {
+        "page": "crown",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Crown System Comparison (Men)",
+        "content": {
+            "title": "text",
+            "sub_title": "text"
+        },
+        "elements_title": "Comparison",
+        "element": {
+            "images": {
+                "comparison": {
+                    "size": "800x800"
+                }
+            },
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "mens_crown_hair_system_faq": {
+        "page": "crown",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Crown System Faq (Men)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "mens_cap_hair_system_banner": {
+        "page": "cap",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Cap Hair System Banner (Men)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                }
+            },
+            "title_1": "text",
+            "title_2": "text"
+        }
+    },
+    "mens_cap_hair_system_product": {
+        "page": "cap",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Cap System Product Caption (Men)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": false
+        }
+    },
+    "mens_cap_hair_system_faq": {
+        "page": "cap",
+        "builder": true,
+        "no_selection": false,
+        "name": "Mens Cap System Faq (Men)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+
+
+
+    "women_wigs_and_toppers_banner": {
+
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Wigs and Toppers Banner (Women)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "title": "text",
+            "subtitle1": "text",
+            "subtitle2": "text",
+            "subtitle3": "text"
+        }
+    },
+    "women_wigs_and_toppers_categories": {
+
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Wigs and Toppers Categories (Women)",
+        "elements_title": "Category",
+        "element": {
+            "images": {
+                "category": {
+                    "size": "280x280"
+                }
+            },
+            "title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_wigs_and_toppers_product": {
+        "page": "wigs",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Wigs and Toppers Product (Women)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        }
+    },
+    "women_wigs_and_toppers_slider": {
+        "page": "wigs",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Wigs and Toppers Slider (Women)",
+        "element": {
+            "images": {
+                "slider_banner": {
+                    "size": "1920x620"
+                }
+            },
+            "title": "text",
+            "sub_title1": "text",
+            "sub_title2": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_wigs_and_toppers_faq": {
+        "page": "wigs",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Wigs and Toppers FAQ (Women)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "women_human_hair_toppers_banner": {
+        "page": "toppers",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Human Hair Toppers Banner (Women)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "title": "text",
+            "title_br": "text",
+            "sub_title": "text"
+        }
+    },
+    "women_human_hair_toppers_product": {
+        "page": "toppers",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Human Hair Toppers Product (Women)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_human_hair_toppers_slider": {
+        "page": "toppers",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Human Hair Toppers Slider (Women)",
+        "element": {
+            "images": {
+                "slider_banner": {
+                    "size": "1920x620"
+                }
+            },
+            "title": "text",
+            "sub_title1": "text",
+            "sub_title2": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_human_hair_toppers_faq": {
+        "page": "toppers",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Human Hair Toppers FAQ (Women)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "women_hair_integration_systems_banner": {
+        "page": "integration",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Hair Integration Systems Banner (Women)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "list_1": "text",
+            "list_2": "text",
+            "list_3": "text"
+        }
+    },
+    "women_hair_integration_systems_product": {
+        "page": "integration",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Hair Integration Systems Product (Women)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_hair_integration_systems_slider": {
+        "page": "integration",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Hair Integration Systems Slider (Women)",
+        "element": {
+            "images": {
+                "slider_banner": {
+                    "size": "1920x620"
+                }
+            },
+            "title": "text",
+            "sub_title1": "text",
+            "sub_title2": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_hair_integration_systems_faq": {
+        "page": "integration",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Hair Integration Systems FAQ (Women)",
+        "element": {
+            "title": "text",
+            "details": "text",
+            "modal": true
+        }
+    },
+    "women_women_hair_systems_banner": {
+        "page": "systems",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Hair Systems Banner (Women)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "title": "text",
+            "sub_title": "text"
+        }
+    },
+    "women_women_hair_systems_product": {
+        "page": "systems",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Hair Systems Product (Women)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_women_hair_systems_slider": {
+        "page": "systems",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Hair Systems Slider (Women)",
+        "element": {
+            "images": {
+                "slider_banner": {
+                    "size": "1920x620"
+                }
+            },
+            "title": "text",
+            "sub_title1": "text",
+            "sub_title2": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_women_hair_systems_faq": {
+        "page": "systems",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Hair Systems FAQ (Women)",
+        "element": {
+            "title": "text",
+            "details": "text",
+            "modal": true
+        }
+    },
+    "women_human_hair_wigs_banner": {
+        "page": "hair wigs",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Hair Wigs Banner (Women)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "title": "text",
+            "sub_title": "text"
+        }
+    },
+    "women_human_hair_wigs_product": {
+        "page": "hair wigs",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Hair Wigs Product (Women)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_human_hair_wigs_slider": {
+        "page": "hair wigs",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Hair Wigs Slider (Women)",
+        "element": {
+            "images": {
+                "slider_banner": {
+                    "size": "1920x620"
+                }
+            },
+            "title": "text",
+            "sub_title1": "text",
+            "sub_title2": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_human_hair_wigs_faq": {
+        "page": "hair wigs",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Hair Wigs FAQ (Women)",
+        "element": {
+            "title": "text",
+            "details": "text",
+            "modal": true
+        }
+    },
+    "women_medical_grade_wigs_banner": {
+        "page": "medical",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Medical Grade Wigs Banner (Women)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "list_1": "text",
+            "list_2": "text",
+            "list_3": "text",
+            "list_4": "text"
+        }
+    },
+    "women_medical_grade_wigs_product": {
+        "page": "medical",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Medical Grade Wigs Product (Women)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_medical_grade_wigs_slider": {
+        "page": "medical",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Medical Grade Wigs Slider (Women)",
+        "element": {
+            "images": {
+                "slider_banner": {
+                    "size": "1920x620"
+                }
+            },
+            "title": "text",
+            "sub_title1": "text",
+            "sub_title2": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_medical_grade_wigs_faq": {
+        "page": "medical",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Medical Grade Wigs FAQ (Women)",
+        "element": {
+            "title": "text",
+            "details": "text",
+            "modal": true
+        }
+    },
+    "women_lace_front_banner": {
+        "page": "lace",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Lace Front Banner (Women)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "list_1": "text",
+            "list_2": "text",
+            "list_3": "text"
+        }
+    },
+    "women_lace_front_product": {
+        "page": "lace",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Lace Front Product (Women)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_lace_front_slider": {
+        "page": "lace",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Lace Front Slider (Women)",
+        "element": {
+            "images": {
+                "slider_banner": {
+                    "size": "1920x620"
+                }
+            },
+            "title": "text",
+            "sub_title1": "text",
+            "sub_title2": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "women_lace_front_faq": {
+        "page": "lace",
+        "builder": true,
+        "no_selection": false,
+        "name": "Women Lace Front FAQ (Women)",
+        "element": {
+            "title": "text",
+            "details": "text",
+            "modal": true
+        }
+    },
+
+
+
+
+    "extensions_human_hair_extensions_banner": {
+
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions_Human_Hair_Extensions_Banner (Women)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "title": "text",
+            "subtitle1": "text",
+            "subtitle2": "text",
+            "subtitle3": "text"
+        }
+    },
+    "extensions_human_hair_extensions_categories": {
+        "page": "extensions",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Human Hair Extensions Categories (Extensions)",
+        "elements_title": "Category",
+        "element": {
+            "images": {
+                "category": {
+                    "size": "280x280"
+                }
+            },
+            "title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "extensions_human_hair_extensions_pro_account": {
+
+        "builder": true,
+        "no_selection": false,
+        "name": " Pro Account (Extensions)",
+        "content": {
+            "title": "text",
+            "subtitle": "text"
+        },
+        "elements_title": "Pro Account",
+        "element": {
+            "title": "text",
+            "subtitle": "text"
+        }
+    },
+    "extensions_human_hair_extensions_product": {
+        "page": "extensions",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Human Hair Extensions Product (Extensions)",
+        "content": {
+            "title": "text",
+            "details": "text"
+
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "extensions_human_hair_extensions_premium": {
+        "page": "extensions",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Human Hair Extensions Premium (Extensions)",
+        "content": {
+            "videos": {
+                "premium_video": {
+                    "size": "1920x800"
+                }
+            },
+            "title": "text",
+            "sub_title": "text",
+            "details": "text"
+        }
+    },
+    "extensions_human_hair_extensions_faq": {
+        "page": "extensions",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Human Hair Extensions FAQ (Extensions)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "extensions_fusion_fair_extensions_banner": {
+        "page": "fusion",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Fusion Fair Extensions Banner (Extensions)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "title": "text",
+            "subtitle": "text"
+        }
+    },
+    "extensions_fusion_fair_extensions_product": {
+        "page": "fusion",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Fusion Fair Extensions Product (Extensions)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "extensions_fusion_fair_extensions_faq": {
+        "page": "fusion",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Fusion Fair Extensions FAQ (Extensions)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "extensions_tape_hair_extensions_banner": {
+        "page": "tape",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Tape Hair Extensions Banner (Extensions)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "title": "text",
+            "subtitle": "text"
+        }
+    },
+    "extensions_tape_hair_extensions_product": {
+        "page": "tape",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Tape Hair Extensions Product (Extensions)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "extensions_tape_hair_extensions_faq": {
+        "page": "tape",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Tape Hair Extensions FAQ (Extensions)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "extensions_weft_hair_extensions_banner": {
+        "page": "sew-in",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Weft Hair Extensions Banner (Extensions)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "title": "text",
+            "subtitle": "text"
+        }
+    },
+    "extensions_weft_hair_extensions_product": {
+        "page": "sew-in",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Weft Hair Extensions Product (Extensions)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "extensions_weft_hair_extensions_faq": {
+        "page": "sew-in",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Weft Hair Extensions FAQ (Extensions)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "extensions_clip_hair_extensions_banner": {
+        "page": "clip-in",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Clip Hair Extensions Banner (Extensions)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "title": "text",
+            "subtitle": "text"
+        }
+    },
+    "extensions_clip_hair_extensions_product": {
+        "page": "clip-in",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Clip Hair Extensions Product (Extensions)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "extensions_clip_hair_extensions_faq": {
+        "page": "clip-in",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Clip Hair Extensions FAQ (Extensions)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "extensions_supplies_tools_extensions_banner": {
+        "page": "tools",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Supplies Tools Extensions Banner (Extensions)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x480"
+                },
+                "banner_mobile": {
+                    "size": "750x480"
+                }
+            },
+            "title": "text",
+            "subtitle": "text"
+        }
+    },
+    "extensions_supplies_tools_extensions_product": {
+        "page": "tools",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Supplies Tools Extensions Product (Extensions)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "extensions_supplies_tools_extensions_faq": {
+        "page": "tools",
+        "builder": true,
+        "no_selection": false,
+        "name": "Extensions Supplies Tools Extensions FAQ (Extensions)",
+        "element": {
+            "title": "text",
+            "details": "text",
+
+            "modal": true
+        }
+    },
+    "clearance_hair_systems_banner": {
+        "page": "systems",
+        "builder": true,
+        "no_selection": false,
+        "name": "Clearance Hair Systems Banner (Clearance)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x772"
+                },
+                "banner_mobile": {
+                    "size": "600x600"
+                }
+            },
+            "title": "text",
+            "subtitle": "text"
+        }
+    },
+    "clearance_hair_systems_product1": {
+        "page": "systems",
+        "builder": true,
+        "no_selection": false,
+        "name": "Clearance Hair Systems Product 1 (Clearance)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "clearance_hair_systems_product2": {
+        "page": "systems",
+        "builder": true,
+        "no_selection": false,
+        "name": "Clearance Hair Systems Product 2 (Clearance)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "clearance_hair_extensions_banner": {
+        "page": "extensions",
+
+        "builder": true,
+        "no_selection": false,
+        "name": "Clearance Hair Extension Banner (Clearance)",
+        "content": {
+            "images": {
+                "banner_desktop": {
+                    "size": "1920x772"
+                },
+                "banner_mobile": {
+                    "size": "600x600"
+                }
+            }
+        }
+    },
+
+    "clearance_hair_extensions_product": {
+        "page": "extensions",
+        "builder": true,
+        "no_selection": false,
+        "name": "Clearance Hair Systems Product 1 (Clearance)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "supplies_hair_system_supplies_banner": {
+        "page": "supplies",
+        "builder": true,
+        "no_selection": false,
+        "name": "Supplies Hair System Supplies Banner (Supplies)",
+        "content": {
+            "images": {
+                "tools": {
+                    "size": "500x340"
+                },
+                "tapes": {
+                    "size": "500x340"
+                },
+                "others": {
+                    "size": "500x340"
+                }
+            },
+            "tools_link": "text",
+            "tapes_link": "text",
+            "others_link": "text"
+        }
+    },
+    "supplies_hair_system_supplies_product": {
+        "page": "extensions",
+        "builder": true,
+        "no_selection": false,
+        "name": "Supplies Hair System Supplies Product (Supplies)",
+        "content": {
+            "title": "text",
+            "details": "text"
+        },
+        "elements_title": "Product",
+        "element": {
+            "images": {
+                "product": {
+                    "size": "1024x1024"
+                },
+                "product_hover": {
+                    "size": "1024x1024"
+                }
+            },
+            "heading": "text",
+            "title": "text",
+            "sub_title": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "supplies_hair_system_supplies_differs": {
+        "page": "extensions",
+        "builder": true,
+        "no_selection": false,
+        "name": "Supplies Hair System Supplies Differs (Supplies)",
+        "content": {
+            "images": {
+                "men": {
+                    "size": "1024x469"
+                },
+                "women": {
+                    "size": "1024x469"
+                }
+            },
+            "link_men": "text",
+            "link_women": "text"
+        }
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    "advertisement_slider": {
+        "page": "common",
+        "builder": true,
+        "no_selection": false,
+        "name": "Common (Women)",
+        "element": {
+            "images": {
+                "slider_banner": {
+                    "size": "1920x620"
+                }
+            },
+            "title": "text",
+            "sub_title1": "text",
+            "sub_title2": "text",
+            "link": "text",
+            "modal": true
+        }
+    },
+    "pro_account": {
+        "page": "common",
+
+        "builder": true,
+        "no_selection": false,
+        "name": "Pro Account Common (Multiple Pages)",
+        "content": {
+            "title": "text",
+            "subtitle": "text"
+        },
+        "elements_title": "Pro Account",
+        "element": {
+            "title": "text",
+            "subtitle": "text"
+        }
+    },
+    "inquiries": {
+        "page": "common",
+        "builder": true,
+        "no_selection": false,
+        "name": "Inquiries (Multiple Pages)"
+    }
+}
