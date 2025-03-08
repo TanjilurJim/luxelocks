@@ -1,0 +1,1 @@
+["slider","product_category","exclusive_secs","services_highlights","banner1","special_offers","sort_by_categories","banner2","categories_list","latest_product","gift_gadgets","gift_product","banner3","home_garden","featured_brands","selected_products","banner4","recently_view_products"]
